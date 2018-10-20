@@ -6,7 +6,9 @@ public class CommonTest {
 
 	void login(String username, String password) {
 		LoginPage loginPage = LoginPage.getInstance();
-		loginPage.enterValueForLoginPage(username, password);
+		loginPage.enterValueForLoginPage("userNameTextFiled", username);
+		loginPage.enterValueForLoginPage("passwordTextFiled", password);
+		loginPage.clickButton("loginButtonFiled");
 	}
 
 }
